@@ -1,4 +1,4 @@
-package sectors.polimorfizm.example1;
+package sectors.metody.example2.example1;
 
 public class Person {
     private String firstName;
