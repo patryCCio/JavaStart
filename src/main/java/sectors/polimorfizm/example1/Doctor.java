@@ -1,15 +1,23 @@
 package sectors.polimorfizm.example1;
 
 public class Doctor extends Person {
-    private int bonus;
+    private double bonus;
 
-    public Doctor(String name, String lastName, int salary, int bonus) {
-        super(name, lastName, salary);
+    public Doctor(String firstName, String lastName, double salary, double bonus) {
+        super(firstName, lastName, salary);
+        this.bonus = bonus;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
         this.bonus = bonus;
     }
 
     @Override
-    public String getInfo() {
-        return super.getInfo() + " / Premia: " + bonus;
+    String getInfo() {
+        return super.getInfo() + ", Premia: " + bonus;
     }
 }

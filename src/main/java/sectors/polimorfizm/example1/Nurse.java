@@ -1,15 +1,23 @@
 package sectors.polimorfizm.example1;
 
-public class Nurse extends Person {
-    private int overtime;
+public class Nurse extends Person{
+    int overtime;
 
-    public Nurse(String name, String lastName, int salary, int overtime) {
-        super(name, lastName, salary);
+    public Nurse(String firstName, String lastName, double salary, int overtime) {
+        super(firstName, lastName, salary);
+        this.overtime = overtime;
+    }
+
+    public int getOvertime() {
+        return overtime;
+    }
+
+    public void setOvertime(int overtime) {
         this.overtime = overtime;
     }
 
     @Override
-    public String getInfo() {
-        return super.getInfo() + " / Ilość nadgodzin: " + overtime;
+    String getInfo() {
+        return super.getInfo() + ", Nadgodziny: " + overtime;
     }
 }

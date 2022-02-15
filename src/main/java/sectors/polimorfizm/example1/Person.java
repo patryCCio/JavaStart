@@ -1,22 +1,22 @@
 package sectors.polimorfizm.example1;
 
 public class Person {
-    private String name;
+    private String firstName;
     private String lastName;
-    private int salary;
+    private double salary;
 
-    public Person(String name, String lastName, int salary) {
-        this.name = name;
+    public Person(String firstName, String lastName, double salary) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -27,15 +27,15 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public String getInfo(){
-        return "Imię i nazwisko: " + name + " " + lastName + " / wypłata: " + salary;
+    String getInfo(){
+        return firstName + " " + lastName + ", Wypłata: " + salary;
     }
 }
