@@ -7,4 +7,10 @@ public class Credit {
     double interestRate;
     int termMonths;
 
+    public Credit(double cashBorrowed, double cashReturned, double interestRate, int termMonths) {
+        this.cashBorrowed = cashBorrowed;
+        this.cashReturned = cashReturned;
+        this.interestRate = interestRate;
+        this.termMonths = termMonths;
+    }
 }
